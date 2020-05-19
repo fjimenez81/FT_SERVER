@@ -3,13 +3,12 @@ FROM debian:buster
 MAINTAINER Fernando Jimenez Cuerva
 
 RUN apt update && \
-	apt install -y \
+	apt install -y nginx \
+	openssl \
 	mariadb-server \
-	nginx \
 	php-fpm \
 	php-mysql \
 	php-mbstring \
-	openssl \
 	wget
 
 #Copia srcs
